@@ -1,3 +1,5 @@
+/** @format */
+
 import GenerateCharacter from '../GenerateCharacter';
 
 describe('GenerateCharacter', () => {
@@ -31,5 +33,10 @@ describe('GenerateCharacter', () => {
   xit('has an hp stat between 5 and 8', () => {
     expect(character.hp).toBeGreaterThanOrEqual(5);
     expect(character.hp).toBeLessThanOrEqual(8);
+  });
+
+  it('assigns a gender', () => {
+    const genders = ['male', 'female', 'nonbinary'];
+    expect(genders).toContain(character.gender);
   });
 });
