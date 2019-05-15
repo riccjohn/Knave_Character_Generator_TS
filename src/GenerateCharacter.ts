@@ -1,3 +1,5 @@
+import { rollOneStat } from './helperFunctions/diceRolls';
+
 interface IAbilities {
   strength: number;
   dexterity: number;
@@ -18,18 +20,7 @@ class GenerateCharacter {
     this.maxHp = 0;
   }
 
-  private rollOneStat() {
-    return new Array(3)
-      .fill(undefined)
-      .map(() => {
-        return Math.floor(Math.random() * 6 + 1);
-      })
-      .reduce((acc, curr) => {
-        return curr < acc ? curr : acc;
-      });
-  }
-
-  private generateAbilities() {
+  private generateAbilities = () => {
     const [
       charisma,
       constitution,
@@ -39,7 +30,7 @@ class GenerateCharacter {
       wisdom
     ] = Array(6)
       .fill(undefined)
-      .map(this.rollOneStat);
+      .map(rollOneStat);
     return {
       charisma,
       constitution,
