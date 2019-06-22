@@ -1,24 +1,24 @@
 {
   "name": "Knave_Character_Generator_TS",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Character generator for the TTRPG, Knave, by Ben Milton",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --verbose"
   },
   "keywords": [],
-  "author": "",
+  "author": "John Riccardi <riccjohn@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "@types/enzyme": "^3.9.1",
-    "@types/jest": "^24.0.12",
-    "enzyme": "^3.9.0",
-    "jest": "^24.8.0",
-    "ts-jest": "^24.0.2",
-    "tslint": "^5.16.0",
     "typescript": "^3.4.5"
   },
   "devDependencies": {
-    "prettier": "^1.17.0"
+    "prettier": "^1.17.0",
+    "tslint": "^5.16.0",
+    "enzyme": "^3.9.0",
+    "jest": "^24.8.0",
+    "@types/enzyme": "^3.9.1",
+    "@types/jest": "^24.0.12",
+    "ts-jest": "^24.0.2"
   }
 }
