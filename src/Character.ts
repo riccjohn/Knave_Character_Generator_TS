@@ -1,19 +1,8 @@
-/** @format */
-
 import {
   rollDie,
   rollOneStat,
   rollWithinBounds,
 } from './helperFunctions/diceRolls';
-
-interface IAbilities {
-  strength: IAbility;
-  dexterity: IAbility;
-  constitution: IAbility;
-  intelligence: IAbility;
-  wisdom: IAbility;
-  charisma: IAbility;
-}
 
 interface IAbility {
   bonus: number;

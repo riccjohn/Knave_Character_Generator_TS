@@ -1,5 +1,3 @@
-/** @format */
-
 export const rollDie = (dieSize: number, numOfDice: number = 1): number => {
   const rolls = [];
   for (let i = 0; i < numOfDice; i++) {
