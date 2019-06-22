@@ -1,8 +1,15 @@
 interface IAbilities {
-  strength: number;
-  dexterity: number;
-  constitution: number;
-  intelligence: number;
-  wisdom: number;
-  charisma: number;
+  charisma: IAbility;
+  constitution: IAbility;
+  dexterity: IAbility;
+  intelligence: IAbility;
+  strength: IAbility;
+  wisdom: IAbility;
 }
+
+interface IAbility {
+  bonus: number;
+  defense: number;
+}
+
+type Gender = 'male' | 'female' | 'nonbinary' | undefined;

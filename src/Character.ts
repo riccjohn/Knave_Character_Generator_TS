@@ -4,13 +4,6 @@ import {
   rollWithinBounds,
 } from './helperFunctions/diceRolls';
 
-interface IAbility {
-  bonus: number;
-  defense: number;
-}
-
-type Gender = 'male' | 'female' | 'nonbinary';
-
 class Character {
   public level: number;
   public abilities: IAbilities;
@@ -56,6 +49,8 @@ class Character {
         return 'female';
       case 3:
         return 'nonbinary';
+      default:
+        return;
     }
   };
 }
