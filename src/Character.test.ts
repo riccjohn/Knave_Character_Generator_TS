@@ -1,9 +1,9 @@
-import GenerateCharacter from './GenerateCharacter';
+import Character from './Character';
 
-describe('GenerateCharacter', () => {
+describe('Character', () => {
   let character: any;
   beforeEach(() => {
-    character = new GenerateCharacter();
+    character = new Character();
   });
 
   it('creates a level 1 character by default', () => {
@@ -18,13 +18,13 @@ describe('GenerateCharacter', () => {
       'dexterity',
       'intelligence',
       'strength',
-      'wisdom'
+      'wisdom',
     ]);
   });
 
   it('has six random ability stats', () => {
     const abilityScoresA = Object.values(character.abilities);
-    const abilityScoresB = Object.values(new GenerateCharacter().abilities);
+    const abilityScoresB = Object.values(new Character().abilities);
     expect(abilityScoresA).not.toEqual(abilityScoresB);
   });
 
