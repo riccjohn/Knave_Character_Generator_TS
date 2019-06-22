@@ -6,7 +6,7 @@ class GenerateCharacter {
   constructor() {
     this.level = 1;
     this.abilities = this.generateAbilities();
-    this.maxHp = 0;
+    this.maxHp = this.rollForHP();
   }
 
   private rollOneStat() {
@@ -19,6 +19,18 @@ class GenerateCharacter {
         return curr < acc ? curr : acc;
       });
   }
+
+  private rollForHP = (): number => {
+    let maxHP = 0;
+    while (maxHP < 5) {
+      maxHP = this.rollDie(8);
+    }
+    return maxHP;
+  };
+
+  private rollDie = (dieSize: number): number => {
+    return Math.floor(Math.random() * dieSize + 1);
+  };
 
   private generateAbilities() {
     const [

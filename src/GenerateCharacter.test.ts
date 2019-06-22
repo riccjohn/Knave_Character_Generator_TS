@@ -18,7 +18,7 @@ describe('GenerateCharacter', () => {
       'dexterity',
       'intelligence',
       'strength',
-      'wisdom',
+      'wisdom'
     ]);
   });
 
@@ -28,8 +28,8 @@ describe('GenerateCharacter', () => {
     expect(abilityScoresA).not.toEqual(abilityScoresB);
   });
 
-  it('has an hp stat between 5 and 8', () => {
-    expect(character.hp).toBeGreaterThanOrEqual(5);
-    expect(character.hp).toBeLessThanOrEqual(8);
+  it('has a max hp stat between 5 and 8', () => {
+    expect(character.maxHp).toBeGreaterThanOrEqual(5);
+    expect(character.maxHp).toBeLessThanOrEqual(8);
   });
 });
