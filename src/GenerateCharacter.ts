@@ -9,7 +9,7 @@ class GenerateCharacter {
     this.maxHp = this.rollForHP();
   }
 
-  private rollOneStat() {
+  private rollOneStat(): number {
     return new Array(3)
       .fill(undefined)
       .map(() => {
@@ -32,7 +32,7 @@ class GenerateCharacter {
     return Math.floor(Math.random() * dieSize + 1);
   };
 
-  private generateAbilities() {
+  private generateAbilities(): IAbilities {
     const [
       charisma,
       constitution,
