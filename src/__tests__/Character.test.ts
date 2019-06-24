@@ -1,5 +1,3 @@
-/** @format */
-
 import Character from '../Character';
 
 describe('Character', () => {
