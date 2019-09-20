@@ -3,6 +3,7 @@ import {
   rollOneStat,
   rollWithinBounds,
 } from './helperFunctions/diceRolls';
+import * as traits from "./data/traits.json"
 
 class Character {
   public level: number;
