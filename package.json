@@ -10,15 +10,15 @@
   "author": "John Riccardi <riccjohn@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "typescript": "^3.4.5"
+    "typescript": "^3.6.3"
   },
   "devDependencies": {
-    "prettier": "^1.17.0",
-    "tslint": "^5.16.0",
-    "enzyme": "^3.9.0",
-    "jest": "^24.8.0",
-    "@types/enzyme": "^3.9.1",
-    "@types/jest": "^24.0.12",
-    "ts-jest": "^24.0.2"
+    "@types/enzyme": "^3.10.3",
+    "@types/jest": "^24.0.18",
+    "enzyme": "^3.10.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.1.0",
+    "tslint": "^5.20.0"
   }
 }
