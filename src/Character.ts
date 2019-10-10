@@ -3,7 +3,7 @@ import {
   rollOneStat,
   rollWithinBounds,
 } from './helperFunctions/diceRolls';
-import * as traits from "./data/traits.json"
+import * as traits from './data/traits.json';
 
 class Character {
   public level: number;
@@ -11,6 +11,7 @@ class Character {
   public maxHp: number;
   public healingRate: number;
   public gender: Gender;
+  public copperPieces: number;
 
   constructor() {
     this.level = 1;
@@ -18,6 +19,7 @@ class Character {
     this.maxHp = rollWithinBounds(8, 5);
     this.healingRate = rollDie(8) + this.abilities.constitution.bonus;
     this.gender = this.randomGender();
+    this.copperPieces = rollDie(6, 3) + 20;
   }
 
   private generateAbilities = (): IAbilities => {

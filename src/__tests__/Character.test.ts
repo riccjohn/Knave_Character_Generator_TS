@@ -51,4 +51,10 @@ describe('Character', () => {
       expect(newCharacter.maxHp).toBeLessThanOrEqual(8);
     }
   });
+
+  it('has a randomly generated starting copper pieces', () => {
+    const newCharacter = new Character();
+    expect(newCharacter.copperPieces).toBeGreaterThanOrEqual(23);
+    expect(newCharacter.copperPieces).toBeLessThanOrEqual(38);
+  });
 });
