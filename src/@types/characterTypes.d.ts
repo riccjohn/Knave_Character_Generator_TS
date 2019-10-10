@@ -12,4 +12,11 @@ interface IAbility {
   defense: number;
 }
 
+type GearList = IGear[];
+
+interface IGear {
+  name: String;
+  count: Number;
+}
+
 type Gender = 'male' | 'female' | 'nonbinary' | undefined;

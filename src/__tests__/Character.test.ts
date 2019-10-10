@@ -57,4 +57,17 @@ describe('Character', () => {
     expect(newCharacter.copperPieces).toBeGreaterThanOrEqual(23);
     expect(newCharacter.copperPieces).toBeLessThanOrEqual(38);
   });
+
+  it('has 2 days of rations in its starting gear', () => {
+    const newCharacter = new Character();
+    expect(newCharacter.gear).toContainEqual({ name: 'rations', count: 2 });
+  });
+
+  it('has enough gear to fill all gear slots', () => {
+    const newCharacter = new Character();
+    newCharacter.getGear();
+    expect(newCharacter.gear).toHaveLength(
+      newCharacter.abilities.constitution.defense,
+    );
+  });
 });
