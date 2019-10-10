@@ -1,0 +1,47 @@
+{
+  "armor": [
+    {
+      "name": "gambeson armor",
+      "defense": 12,
+      "slot": 1,
+      "quality": 3
+    },
+    {
+      "name": "brigandine armor",
+      "defense": 13,
+      "slot": 2,
+      "quality": 4
+    },
+    {
+      "name": "chain armor",
+      "defense": 14,
+      "slot": 3,
+      "quality": 5
+    },
+    {
+      "name": "shield",
+      "defense": 1,
+      "slot": 1,
+      "quality": 1
+    },
+    {
+      "name": "helmet",
+      "defense": 1,
+      "slot": 1,
+      "quality": 1
+    },
+
+    {
+      "name": "half plate armor",
+      "defense": 15,
+      "slot": 4,
+      "quality": 6
+    },
+    {
+      "name": "full plate armor",
+      "defense": 16,
+      "slot": 5,
+      "quality": 7
+    }
+  ]
+}

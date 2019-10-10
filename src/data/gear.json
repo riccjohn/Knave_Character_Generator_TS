@@ -1,0 +1,17 @@
+{
+  "dungeoneeringGear": [
+    "rope (50 ft.)",
+    "pulleys",
+    "candles (5)",
+    "chain (10 ft.)",
+    "chalk (10)"
+  ],
+  "generalGearSetOne": [
+    "air bladder",
+    "bear trap",
+    "shovel",
+    "bellows",
+    "grease"
+  ],
+  "generalGearSetTwo": ["incense", "sponge", "lens", "perfume", "horn"]
+}
