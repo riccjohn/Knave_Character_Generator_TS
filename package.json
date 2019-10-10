@@ -10,7 +10,7 @@
   "author": "John Riccardi <riccjohn@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "typescript": "^3.6.3"
+    "typescript": "^3.6.4"
   },
   "devDependencies": {
     "@types/enzyme": "^3.10.3",
