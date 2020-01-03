@@ -10,6 +10,7 @@
   "author": "John Riccardi <riccjohn@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "coveralls": "^3.0.9",
     "typescript": "^3.6.4"
   },
   "devDependencies": {

@@ -10,3 +10,4 @@ jobs:
       node_js: node
       script:
         - jest
+        - jest --coverage --coverageReporters=text-lcov | $(npm bin)/coveralls
