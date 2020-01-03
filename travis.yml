@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - '12.14.0'
+
+script: echo 'Running tests against $(node -v) ...'
+
+jobs:
+  include:
+    - stage: Testing
+      node_js: node
+      script:
+        - jest
